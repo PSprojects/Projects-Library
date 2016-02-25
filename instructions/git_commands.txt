@@ -15,3 +15,26 @@ Preview changes before merge:  git diff <sourcebranch> <targetbranch>
 Tag with version number:  git tag 1.0.0 <commitID>
 Undo and replace with last content:  git checkout -- <filename>
 
+
+Step one:
+Pull your repo to your local host, always ensure you haven't made changes to any files BEFORE doing this.  (git pull)
+
+Step two:
+Switch to production branch (git checkout production)
+
+Step three:  
+Now that your files are all the most recent and up-to-date files and you are safely out of the master branch, you can open them and make changes to them safely.  
+
+Step four:
+Commit the new changes (git commit -m "Put in a message explaining your changes")
+
+Step five:
+Please be sure to not push changes to master branch until you are 100% certain you will not break anything.  Push to the production environment, not the live environment.  
+(git push)
+
+Step six: 
+Test
+
+Step seven:
+Push to master if everything looks good.
+
