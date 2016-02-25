@@ -1,0 +1,17 @@
+Create new repository:  git init
+Check out repository: git clone/path/to/repository
+Add new file:  git add <filename> or git add *
+Commit new changes:  git commit -m "Put message here."
+Push new changes to master branch:  git push origin master
+Check status:  git status
+Create new branch and enter it:  git checkout -b <branchname>
+Switch from one branch to another:  git checkout <branchname>
+List all branches in repo & check which one you're in:  git branch
+Fetch and merge changes to local host:  git pull
+Merge to different branch:  git merge <branchname>
+View all merge conflicts:  git diff
+View conflicts against base:  git diff --base <filename>
+Preview changes before merge:  git diff <sourcebranch> <targetbranch>
+Tag with version number:  git tag 1.0.0 <commitID>
+Undo and replace with last content:  git checkout -- <filename>
+
