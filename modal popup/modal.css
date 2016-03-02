@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* Modal Pop Up CSS3
+/* Lisa French - 3/2/2016
+ */
+
+a.button {
+	text-align:center; /* This just centers the text in the button */
+	margin:auto; /* This also centers the text in the button */
+	font-size: 1em; /* Self explanatory, controls size of font for button */
+	padding: 20px; /* Change this to change the padding around the text */
+	color: #000; /* Change this to change the color of the text in the link button */
+	border: 2px solid #ED1c24; /* Change this to change the border around the button (both thickness and color) */
+	border-radius: 30px/50px; /* Change this to change the rounded corners */
+	text-decoration: none; 
+	cursor: pointer; /* Change this to change the cursor */
+	transition: all 0.3s ease-out; /* This is a CSS3 transition */
+	}
+a.button:hover {
+	background: #ED1c24; /* Change this to change the color of the button when hovered over. */
+	color:#fff; /* Change this to change the color of the text when button is hovered over */
+	}
+	
+/* Everything below this line controls the actual modal box */
+.modalDialog {
+	position: fixed; 
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0; /* Everything to this point controls the position of the popup box */
+	background: rgba(0, 0, 0, 0.8); /* background color of modal */
+	z-index: 99999; /* This ensures that the pop up modal sits on top of all other content on the page */
+	opacity:0; /* Self explanatory, sets the modal to not be visible */
+	-webkit-transition: opacity 400ms ease-in; /* This is a CSS3 transition that has the modal "fade in" without the use of scripting */
+	-moz-transition: opacity 400ms ease-in; /* This is a CSS3 transition that has the modal "fade in" without the use of scripting */
+	transition: opacity 400ms ease-in; /* This is a CSS3 transition that has the modal "fade in" without the use of scripting */
+	pointer-events: none; 
+	}
+.modalDialog:target {
+	opacity:1; /* This allows the modal to be visible */
+	pointer-events: auto;
+	}
+.modalDialog > div {
+	width: 400px; /* Change this to change the width of the modal popup */
+	position: relative; 
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px; /* Change these to affect the padding of the modal popup */
+	border-radius: 10px; /* Change this to change how "rounded" the corners of the modal popup are */
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #ccc);
+	background: -webkit-linear-gradient(#fff, #ccc); 
+	background: -o-linear-gradient(#fff, #ccc); /* Change the background(s) to control the background of the modal popup */
+	}
+a.close {
+	background: #fff; /* Change the background of the closing 'X' button on the modal popup */
+	color: #000; /* This is the color of the X in the modal popup close button */
+	line-height: 25px;
+	position: absolute; 
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;    
+	-moz-border-radius: 12px; 
+	border-radius: 12px; 
+	-moz-box-shadow: 1px 1px 3px #000; 
+	-webkit-box-shadow: 1px 1px 3px #000; 
+	box-shadow: 1px 1px 3px #000;
+	}
+a.close:hover {
+	background: #ED1c24; 
+	color:#fff;
+	}
