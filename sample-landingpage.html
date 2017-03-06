@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Language" content="en-us"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Credit Systems International, Inc.</title>
+	<link type="text/css" rel="stylesheet" media="all" href="/apswebforms/_common/jquery-ui/themes/base/jquery-ui.css"></link>
+	<link type="text/css" rel="stylesheet" media="all" href="http://www.apsmemberservices.com/apswebforms/_common/css/aps.css"></link>
+	<link href="https://www.apsmemberservices.com/apswebforms/_common/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" />
+	<script type="text/javascript" src="/apswebforms/_common/jquery-ui/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="/apswebforms/_common/js/external/md5.js"></script>
+	<script type="text/javascript" src="/apswebforms/_common/js/internal/aps_splash.js"></script>
+	<script type="text/javascript" src="client.js"></script>
+	<style type="text/css">
+	body {font: 14px/1.4 Tahoma, Verdana, sans-serif; color:#000; background:#1F3161; background-size:cover; -webkit-font-smoothing: antialiased; width:100%;}
+	.header {max-height: 120px; height:120px; width:100%; text-align:center; margin:auto; background:transparent;}
+	.header img {width:370px; height:120px; float:left; }
+	.headerContainer {max-width:910px; text-align:center; margin:auto; background:transparent; padding-bottom:20px;}
+	.headerLeft {text-align:left; background:#fff;}
+	.headerLeft a {font-size:44px; font-weight:bold;}
+	p.greynote {font-size:12px; color:#888;}
+	p.redbigger {font-size:14px; color:#ff0000; font-weight:bold; text-align:center;}
+	#selectForm {background:transparent;}
+	a.info{
+		position:relative; /*this is the key*/
+		z-index:24; background:transparent;
+		color:#0000ff;
+		text-decoration:none}
+
+	a.info:hover{z-index:25; background:transparent}
+
+	a.info span{display: none}
+
+	a.info:hover span{ /*the span will display just on :hover state*/
+		display:block;
+		position:absolute;
+		top:2em; left:2em; width:15em;
+		border:1px solid #0cf;
+		background-color:#fff; color:#000;
+		text-align: center}	
+.newcontainer {max-width:910px; text-align:center; margin:auto; padding-top:20px; background:#fff; padding:0px 20px 20px 20px;}
+.containerLeft {text-align:left;}
+input[type="button"], input[type="reset"], input[type="submit"] {color:#000;}
+hr {color:#7D1516;background:#7D1516;height:4px;}
+.transparentbg {background:transparent;}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="newcontainer">
+<div class="header">
+<div class="headerContainer">
+<div class="headerLeft">
+<a href="#" target="_blank">
+<img src="logo.png" border="0" />
+</a>
+</div>
+</div>
+</div>
+<hr />
+<div class="containerLeft">
+<noscript><div style="border: 1pt solid red;padding: 10px;"><b>Javascript Required: please ensure you have Javascript enabled and that you are using a modern browser - for example, <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a>, <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="https://www.google.com/intl/en-US/chrome/browser/">Chrome</a>.</b></div></noscript>
+<h3 class="black">PAYMENT PORTAL</h3>
+<p>This site provides a secure payment portal for making online payments. 
+<br /> 
+<br />Please ensure that you are paying the correct party and that you have the correct account number. 
+<br /><br />If you have a notice from Credit Systems International, Inc., the account number is the eight digit number shown in the upper right-hand corner of the page (beginning with 1 or 2).
+</p>
+<p>If you do not know your account number, please call 800-316-8064 to obtain your account number before making the payment.
+</p>
+<p>This is an attempt to collect a debt. Any information obtained will be used for that purpose. This communication is from a debt collector.</p>
+<div style="text-align:center;">	
+<form id="selectForm" action="https://secure.usaepay.com/interface/epayform/rLTcFbGeBaimBP4o34Eeg9R6bK1O4IpU/">
+		
+<p class="centered"><b>I have read the above information: </b><input type="checkbox" id="confirmMakePayment"/>
+<p class="centered"><input name="button" value="Continue" type="submit" class="submitMakePayment"/></p>
+</form>
+<hr style="padding:0;margin:0;margin-bottom:5px;" />
+<div class="footer">
+<p style="font-size:11px; text-align:left; padding:0; padding-top:10px;">Copyright &copy; 2016, Credit Systems International, Inc.  
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
